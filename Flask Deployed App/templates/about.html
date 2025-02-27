@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+about
+{% endblock pagetitle %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Favicon-->
+     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/RgKPZXh/logo.png" style="width:40px;,border-radius: 50px;">
+    <title>About | Plant Disease Detection</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ccffcc, #b3ffb3);
+            color: #003300;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+        
+       
+
+        header {
+            background-color: #003d00;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        header h1 {
+            color: #eaf0ea;
+            font-size: 3.5em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+       
+
+        .content {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 128, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200%;
+            height: 100%;
+            background: rgba(0, 204, 0, 0.1);
+            z-index: 0;
+            animation: slideEffect 6s infinite;
+        }
+
+      
+        h2 {
+            color: #004d00;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #003d00;
+            z-index: 1;
+            position: relative;
+        }
+
+        .highlight {
+            color: #00b300;
+            font-weight: bold;
+        }
+
+      /*  footer {
+            background-color: #003d00;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        footer p {
+            font-size: 1.1em;
+        } */
+
+        /* Button for interactivity */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #00cc66;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #00994d;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Plant Disease Detection</h1>
+    </header>
+
+    <div class="content">
+        <h2>About the Project</h2>
+        <p>
+            The <span class="highlight">Plant Disease Detection using Image Processing</span> project introduces a sophisticated method for detecting plant diseases at an early stage using advanced image processing techniques.
+            By analyzing images of plants, the system identifies diseases with remarkable accuracy, helping farmers take immediate corrective actions.
+        </p>
+        <p>
+            Leveraging cutting-edge <span class="highlight">machine learning models</span> and computer vision, the system categorizes different plant diseases and provides insights on severity and treatment. 
+            It revolutionizes the way farmers monitor crop health, significantly reducing the manual effort and time required for diagnosis.
+        </p>
+        <p>
+            Our goal is to empower agriculture with technology by providing a <span class="highlight">scalable and efficient solution</span> for early disease detection, improving crop yield and sustainability globally.
+        </p>
+    </div>
+    <center>
+        <div id="google_translate_element"></div>
+      </center>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <footer>
+        <p>&copy; 2024 Plant Disease Detection Project | Designed with care for agriculture</p>
+    </footer>
+
+</body>
+</html>
+{% endblock body %}
